@@ -1,4 +1,4 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
+import {bijak, lr, truebalance } from "../assets/images";
 import {
     car,
     contact,
@@ -52,25 +52,21 @@ export const skills = [
         name: "HTML",
         type: "Frontend",
     },
-    {
-        imageUrl: javascript,
-        name: "JavaScript",
-        type: "Frontend",
-    },
+   
     {
         imageUrl: mongodb,
-        name: "MongoDB",
-        type: "Database",
+        name: "Java",
+        type: "Backend",
+    },
+    {
+        imageUrl: redux,
+        name: "SpringBoot",
+        type: "backend",
     },
     {
         imageUrl: motion,
         name: "Motion",
         type: "Animation",
-    },
-    {
-        imageUrl: mui,
-        name: "Material-UI",
-        type: "Frontend",
     },
     {
         imageUrl: nextjs,
@@ -88,13 +84,8 @@ export const skills = [
         type: "Frontend",
     },
     {
-        imageUrl: redux,
-        name: "Redux",
-        type: "State Management",
-    },
-    {
-        imageUrl: sass,
-        name: "Sass",
+        imageUrl: javascript,
+        name: "JavaScript",
         type: "Frontend",
     },
     {
@@ -111,55 +102,40 @@ export const skills = [
 
 export const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
-        iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
+        title: "Software Engineer",
+        company_name: "Bijak",
+        icon: bijak,
+        iconBg: "#FFFFFF",
+        date: "May 2022 - August 2023",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Conducted API load testing using Apache JMeter, identifying performance bottlenecks and improving system efficiency.",
+            "Collaborated with backend engineers to debug and enhance RESTful APIs, ensuring optimized response times.",
+            "Worked with Spring Boot microservices to validate API responses and optimize request handling."
         ],
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
+        title: "Software Engineer",
+        company_name: "TrueBalance",
+        icon: truebalance,
         iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
+        date: "March 2021 - May 2022",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+            "Designed and implemented Java-based API testing frameworks, increasing test coverage by 50%",
+            "Assisted in backend development by analyzing API response times and debugging REST endpoints.",
             "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Monitored API performance using New Relic & Android Studio, identifying inefficiencies and working with developers to fix them.",
         ],
     },
     {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
+        title: "Software Engineer",
+        company_name: "LimeRoad",
+        icon: lr,
         iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
+        date: "Oct 2019 - March 2021",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Developed and maintained Java-based API validation scripts, improving test accuracy and coverage by 50%.",
+            "Developed Java-based API automation frameworks with JUnit & RestAssured, reducing manual testing by 40%.",
+            "Automated backend deployments using Jenkins, reducing manual interventions and deployment failures.",
         ],
     },
 ];
@@ -173,12 +149,12 @@ export const socialLinks = [
     {
         name: 'GitHub',
         iconUrl: github,
-        link: 'https://github.com/YourGitHubUsername',
+        link: 'https://github.com/antalparth',
     },
     {
         name: 'LinkedIn',
         iconUrl: linkedin,
-        link: 'https://www.linkedin.com/in/YourLinkedInUsername',
+        link: 'https://www.linkedin.com/in/parth-antal-923b73108/',
     }
 ];
 
@@ -186,43 +162,43 @@ export const projects = [
     {
         iconUrl: pricewise,
         theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/adrianhajdin/pricewise',
+        name: 'Comparing different LP formulations for the Steiner Tree Problem',
+        description: 'The main idea of this dissertation is to employ the flow-based Bidirected Cut Relaxation (BCR) to find the fractional cost of a graph and examine the integrality gap.',
+        link: 'https://github.com/antalparth/Dissertation_SteinerTree',
     },
     {
         iconUrl: threads,
         theme: 'btn-back-green',
-        name: 'Full Stack Threads Clone',
-        description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-        link: 'https://github.com/adrianhajdin/threads',
+        name: 'Development of Language Models(LMs)',
+        description: 'The application’s architecture illustrates a classic example of Java’s object-oriented principles in action.',
+        link: 'https://github.com/antalparth/DevelopmentOfLanguageModels-LMs-',
     },
     {
         iconUrl: car,
         theme: 'btn-back-blue',
-        name: 'Car Finding App',
-        description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
-    },
-    {
-        iconUrl: snapgram,
-        theme: 'btn-back-pink',
-        name: 'Full Stack Instagram Clone',
-        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-        link: 'https://github.com/adrianhajdin/social_media_app',
+        name: 'Making objects and scenes look less pristine in Computer Graphics',
+        description: 'This research is the field between 2D texture synthesis to 3D geometry generation,I endeavoured to understand different techniques and implement one of the techniques to increase the realism of rendered scenes by making the scenes “less pristine”',
+        link: 'https://github.com/antalparth/3DComputerGraphics',
     },
     {
         iconUrl: estate,
         theme: 'btn-back-black',
-        name: 'Real-Estate Application',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-        link: 'https://github.com/adrianhajdin/projects_realestate',
+        name: 'Facebook Security Project using SpringBoot',
+        description: 'Developed a end to end backend logic for Facebook security using SpringBoot.',
+        link: 'https://github.com/antalparth/Facebook_SecurityProject',
+    },
+    {
+        iconUrl: snapgram,
+        theme: 'btn-back-pink',
+        name: 'The Intelligent Web',
+        description: 'A plant exploration platform where users can add, filter, and view plant sightings based on location and characteristics. Users can contribute details, suggest names, and engage in discussions, with offline support for seamless data syncing.',
+        link: 'https://github.com/Intelligent-Web-PROJECT/Team-Project',
     },
     {
         iconUrl: summiz,
         theme: 'btn-back-yellow',
-        name: 'AI Summarizer Application',
-        description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-        link: 'https://github.com/adrianhajdin/project_ai_summarizer',
+        name: 'eWaste Hub',
+        description: 'This project addresses the prevalent issue of electronic waste (eWaste) accumulation. To implement this, To implement this, a web-based hub waste was developed.',
+        link: 'https://github.com/antalparth/eWaste-Management/tree/main/project-main',
     }
 ];

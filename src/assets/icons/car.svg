@@ -1,9 +1,68 @@
 <svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.43398 0.519531C7.04842 0.519531 4.97388 2.15491 4.41692 4.47454L3.82415 6.94336C3.61485 7.81502 2.8353 8.42956 1.93886 8.42956H1.1432C0.511828 8.42956 0 8.94138 0 9.57276V10.1213C0 10.4497 0.26624 10.716 0.594663 10.716C0.923086 10.716 1.18933 10.9822 1.18933 11.3106V23.7748C1.18933 24.7176 1.95362 25.4819 2.89644 25.4819H3.39499C4.06246 25.4819 4.60355 24.9408 4.60355 24.2734C4.60355 23.6059 5.14464 23.0648 5.81211 23.0648H24.1879C24.8554 23.0648 25.3965 23.6059 25.3965 24.2734C25.3965 24.9408 25.9375 25.4819 26.605 25.4819H27.1026C28.045 25.4819 28.8089 24.718 28.8089 23.7757V11.3115C28.8089 10.9826 29.0755 10.716 29.4044 10.716C29.7334 10.716 30 10.4493 30 10.1204V9.57276C30 8.94138 29.4882 8.42956 28.8568 8.42956H28.0611C27.1647 8.42956 26.3851 7.81502 26.1758 6.94336L25.5831 4.47455C25.0261 2.15491 22.9516 0.519531 20.566 0.519531H9.43398ZM6.3784 2.05753H21.1095C22.5826 2.05753 23.8637 3.06746 24.2075 4.49991C24.6885 6.50344 23.1699 8.42971 21.1095 8.42971H8.88978C6.82933 8.42971 5.31075 6.50345 5.7917 4.49992L6.37791 2.05792C6.37796 2.05769 6.37817 2.05753 6.3784 2.05753ZM2.1772 14.1881C2.1772 13.4422 2.92028 12.9244 3.61999 13.1828L6.23786 14.1496C6.65872 14.305 6.9382 14.7062 6.9382 15.1548C6.9382 15.9007 6.19512 16.4184 5.49542 16.16L2.87754 15.1933C2.45668 15.0378 2.1772 14.6367 2.1772 14.1881ZM26.3776 13.1825C27.0774 12.9243 27.8204 13.4421 27.8204 14.188C27.8204 14.6367 27.541 15.0379 27.1201 15.1934L24.5052 16.1594C23.8051 16.4181 23.0614 15.9001 23.0614 15.1537C23.0614 14.7047 23.3412 14.3032 23.7624 14.1477L26.3776 13.1825ZM10.3958 19.7689C10.3958 19.1381 10.9073 18.6266 11.5381 18.6266H18.4584C19.0892 18.6266 19.6007 19.1381 19.6007 19.7689C19.6007 20.3998 19.0892 20.9112 18.4584 20.9112H11.5381C10.9072 20.9112 10.3958 20.3998 10.3958 19.7689Z" fill="url(#paint0_linear_1478_17766)"/>
-<defs>
-<linearGradient id="paint0_linear_1478_17766" x1="10.6108" y1="3.85718" x2="14.2717" y2="25.6045" gradientUnits="userSpaceOnUse">
-<stop offset="0.0001" stop-color="#fff"/>
-<stop offset="1" stop-color="#fff"/>
-</linearGradient>
-</defs>
+  <!-- Base monitor/screen shape -->
+  <path d="M3 1C1.89543 1 1 1.89543 1 3V18C1 19.1046 1.89543 20 3 20H27C28.1046 20 29 19.1046 29 18V3C29 1.89543 28.1046 1 27 1H3Z" fill="url(#paint0_linear_screen)"/>
+  
+  <!-- Screen inner area -->
+  <path d="M3 3H27V16H3V3Z" fill="#101630"/>
+  
+  <!-- Stand -->
+  <path d="M11 20H19V22C19 22.5523 18.5523 23 18 23H12C11.4477 23 11 22.5523 11 22V20Z" fill="url(#paint1_linear_stand)"/>
+  <path d="M9 24H21C21.5523 24 22 24.4477 22 25C22 25.5523 21.5523 26 21 26H9C8.44772 26 8 25.5523 8 25C8 24.4477 8.44772 24 9 24Z" fill="url(#paint2_linear_base)"/>
+  
+  <!-- 3D Objects on screen -->
+  <!-- Cube -->
+  <path d="M7 7L10 5V10L7 12V7Z" fill="#4D75B3" stroke="#6A9DFF" stroke-width="0.3"/>
+  <path d="M10 5L13 7V12L10 10V5Z" fill="#3D65A3" stroke="#6A9DFF" stroke-width="0.3"/>
+  <path d="M7 12L10 10L13 12L10 14L7 12Z" fill="#5D85C3" stroke="#6A9DFF" stroke-width="0.3"/>
+  
+  <!-- Sphere with basic lighting -->
+  <circle cx="19" cy="9" r="4" fill="url(#paint3_radial_sphere)"/>
+  <path d="M18 6.5C18.8284 5.67157 20.1716 5.67157 21 6.5C21.8284 7.32843 21.8284 8.67157 21 9.5C20.1716 10.3284 18.8284 10.3284 18 9.5C17.1716 8.67157 17.1716 7.32843 18 6.5Z" fill="#FFFFFF" fill-opacity="0.4"/>
+  
+  <!-- Wireframe effect -->
+  <path d="M6 15L10 13M10 13L14 15M10 13V9M10 9L6 7M10 9L14 7M18 5L22 7M22 7L26 5M22 7V11M22 11L18 13M22 11L26 13M6 7L10 5L14 7M6 15L10 17L14 15M18 5L22 3L26 5M18 13L22 15L26 13" 
+        stroke="#67E8F9" stroke-width="0.3" stroke-opacity="0.7"/>
+  
+  <!-- Reflection/glare on screen -->
+  <path d="M3 3L5 5L3 7V3Z" fill="url(#paint4_linear_glare)" fill-opacity="0.2"/>
+  
+  <!-- Control buttons -->
+  <circle cx="15" cy="18.5" r="0.7" fill="#67E8F9"/>
+  <rect x="17" y="18.2" width="1.8" height="0.6" rx="0.3" fill="#67E8F9"/>
+  <rect x="20" y="18.2" width="0.6" height="0.6" rx="0.3" fill="#67E8F9"/>
+  <rect x="21" y="18.2" width="0.6" height="0.6" rx="0.3" fill="#67E8F9"/>
+  
+  <!-- Defs -->
+  <defs>
+    <!-- Screen gradient -->
+    <linearGradient id="paint0_linear_screen" x1="15" y1="1" x2="15" y2="20" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3F4C6B"/>
+      <stop offset="1" stop-color="#2C3E50"/>
+    </linearGradient>
+    
+    <!-- Stand gradient -->
+    <linearGradient id="paint1_linear_stand" x1="15" y1="20" x2="15" y2="23" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3F4C6B"/>
+      <stop offset="1" stop-color="#2C3E50"/>
+    </linearGradient>
+    
+    <!-- Base gradient -->
+    <linearGradient id="paint2_linear_base" x1="15" y1="24" x2="15" y2="26" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3F4C6B"/>
+      <stop offset="1" stop-color="#2C3E50"/>
+    </linearGradient>
+    
+    <!-- Sphere radial gradient -->
+    <radialGradient id="paint3_radial_sphere" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" 
+                    gradientTransform="translate(18 7) rotate(45) scale(6)">
+      <stop offset="0" stop-color="#67E8F9"/>
+      <stop offset="1" stop-color="#0891B2"/>
+    </radialGradient>
+    
+    <!-- Glare effect -->
+    <linearGradient id="paint4_linear_glare" x1="3" y1="3" x2="5" y2="7" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="white"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
 </svg>
